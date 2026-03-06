@@ -5,47 +5,54 @@
 <title>im-eileen</title>
 
 <style>
-body {
+
+body{
     font-family: Arial, sans-serif;
     max-width: 900px;
     margin: auto;
     padding: 100px 40px;
     line-height: 1.8;
-    color: #111;
+    background: white;
 }
 
-h1 {
+/* 標題互動 */
+h1{
     font-size: 64px;
-    font-weight: 400;
-    margin-bottom: 0px;
-}
-
-h2 {
-    font-size: 22px;
     font-weight: 300;
-    margin-top: 5px;
+    transition: 0.5s ease;
+}
+
+h1:hover{
+    letter-spacing: 4px;
+}
+
+/* 副標 */
+.subtitle{
+    font-size: 18px;
+    font-weight: 300;
     margin-bottom: 60px;
-    letter-spacing: 0.6px;
+    transition: 0.4s ease;
 }
 
-a {
+/* 副標 hover 變淡 */
+.subtitle:hover{
+    opacity: 0.6;
+}
+
+/* 導覽列 */
+nav a{
     text-decoration: none;
-    color: #111;
-}
-
-nav {
-    margin-top: 50px;
-}
-
-nav a {
-    display: inline-block;
+    color: black;
     margin-right: 40px;
     font-size: 20px;
     font-weight: 300;
+    transition: 0.3s ease;
 }
 
-nav a:hover {
-    opacity: 0.6;
+/* 滑鼠移過去淡化 */
+nav a:hover{
+    opacity: 0.4;
+    transform: translateX(4px);
 }
 
 </style>
@@ -55,7 +62,7 @@ nav a:hover {
 <body>
 
 <h1>im-eileen</h1>
-<h2>Artist & Researcher in Everyday Perception, Travel and Body Observation</h2>
+<h2>Observing small daily moments and the way I see the world.</h2>
 
 <nav>
   <a href="works.html">Works</a>
